@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://unpkg.com/vue@next"></script>
+<body> 
+    <div id = "app">
+        <span><button @click = "MinMax" >По возрастанию</button></span>
+        <span><button @click = "MaxMin">По убыванию</button></span>
+        <ul>
+            <li v-for="product in products">
+             <p>Имя товара: {{product.name }} цена:{{product.price}}</p>
+            </li>
+        </ul>
+    </div>
+    <script src = "vue2.js"></script>   
+</body>
+</html>
